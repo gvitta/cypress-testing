@@ -31,6 +31,15 @@ pipeline  {
     post{
         always{
             archiveArtifacts artifacts: 'cypress/reports/json/*.json', followSymlinks: false
+            cucumber buildStatus: 'UNSTABLE',
+                failedFeaturesNumber: 1,
+                failedScenariosNumber: 1,
+                skippedStepsNumber: 1,
+                failedStepsNumber: 1,
+                reportTitle: 'Cypress Test Report',
+                fileIncludePattern: 'cypress/reports/json/*.json',
+                sortingMethod: 'ALPHABETICAL',
+                trendsLimit: 100
         }
     }
 }
