@@ -19,6 +19,7 @@ pipeline  {
             steps{
                 
                 sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                sh "Execution completed"
             }
         }
         stage('Deploying'){
@@ -29,7 +30,7 @@ pipeline  {
     }
     post{
         always{
-            archiveArtifacts artifacts: 'reports/json/*.json', followSymlinks: false
+            archiveArtifacts artifacts: 'cypress/reports/json/*.json', followSymlinks: false
         }
     }
 }

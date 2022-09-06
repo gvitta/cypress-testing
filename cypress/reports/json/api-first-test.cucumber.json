@@ -27,7 +27,7 @@
             "name": "User access \"https://dummy.restapiexample.com/api/v1/employees\" endpoint",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 93000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "\"200\" Success response should be received",
             "result": {
               "status": "passed",
-              "duration": 934000000
+              "duration": 927000000
             }
           }
         ]
