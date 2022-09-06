@@ -36,7 +36,6 @@ pipeline  {
                 failedScenariosNumber: 1,
                 skippedStepsNumber: 1,
                 failedStepsNumber: 1,
-                reportTitle: 'Cypress Test Report',
                 fileIncludePattern: 'cypress/reports/json/*.json',
                 sortingMethod: 'ALPHABETICAL',
                 trendsLimit: 100
