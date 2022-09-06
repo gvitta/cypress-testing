@@ -2,7 +2,7 @@ pipeline  {
     agent any
     parameters{
         string(name: 'SPEC',defaultValue: "cypress/integration/**/**", description: "Enter the script path you want to execute" )
-        choice(name: 'BROWSER',choices: ['chrome','firefox',description: "Where you want to execute"])
+        choice(name: 'BROWSER',choices: ['chrome','firefox'],description: "Where you want to execute"])
 
     }
     options{
@@ -10,7 +10,10 @@ pipeline  {
     }
     stages{
         stage('Building'){
-            echo "Building the Application"
+            steps{
+                echo "Building the Application"
+            }
+            
         }
         stage('Testing'){
             steps{
@@ -19,7 +22,9 @@ pipeline  {
             }
         }
         stage('Deploying'){
-             echo "Deploying the Application"
+             steps{
+                echo "Deploying the Application"
+             }
         }
     }
     post{
