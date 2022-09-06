@@ -5,7 +5,7 @@ pipeline  {
         choice(name: 'BROWSER',choices: ['chrome','firefox'],description: "Where you want to execute")
 
     }
-
+    tools {nodejs "NODEJS"}
     stages{
         stage('Building'){
             steps{
