@@ -27,7 +27,7 @@
             "name": "User launches \"http://psinnersource.pscloudhub.com\"",
             "result": {
               "status": "passed",
-              "duration": 4547000000
+              "duration": 3388000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "Clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 191000000
+              "duration": 110000000
             }
           }
         ]

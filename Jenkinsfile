@@ -5,7 +5,7 @@ pipeline  {
         choice(name: 'BROWSER',choices: ['chrome','firefox'],description: "Where you want to execute")
 
     }
-    
+
     stages{
         stage('Building'){
             steps{
@@ -27,7 +27,7 @@ pipeline  {
     }
     post{
         always{
-            publishHTML([allowMissing: false,alwaysLinkToLastBuild:false,keepAll:true])
+            archiveArtifacts artifacts: 'reports/json/*.json', followSymlinks: false
         }
     }
 }
