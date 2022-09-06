@@ -11,6 +11,7 @@ pipeline  {
             steps{
                 echo "Building the Application"
                 sh "npm install"
+                sh "npm install cypress --save-dev"
             }
             
         }
