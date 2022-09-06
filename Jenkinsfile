@@ -10,13 +10,14 @@ pipeline  {
         stage('Building'){
             steps{
                 echo "Building the Application"
+                sh "npm install"
             }
             
         }
         stage('Testing'){
             steps{
-                sh "npm i"
-                sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                
+                sh "npm cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
         stage('Deploying'){
