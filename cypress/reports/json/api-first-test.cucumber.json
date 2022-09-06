@@ -1,0 +1,47 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To Test API functionalities using Cypress Framework",
+    "line": 2,
+    "id": "to-test-api-functionalities-using-cypress-framework",
+    "tags": [],
+    "uri": "api-first-test.feature",
+    "elements": [
+      {
+        "id": "to-test-api-functionalities-using-cypress-framework;validate-customer-able-to-retrieve-employee-data-with-get-endpoint",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate Customer able to retrieve employee data with GET endpoint",
+        "tags": [
+          {
+            "name": "@getEndpointTest",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User access \"https://dummy.restapiexample.com/api/v1/employees\" endpoint",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "\"200\" Success response should be received",
+            "result": {
+              "status": "passed",
+              "duration": 749000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

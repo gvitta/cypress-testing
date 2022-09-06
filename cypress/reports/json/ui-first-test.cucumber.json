@@ -1,0 +1,47 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test Web UI Automation using Cypress Framework",
+    "line": 1,
+    "id": "test-web-ui-automation-using-cypress-framework",
+    "tags": [],
+    "uri": "ui-first-test.feature",
+    "elements": [
+      {
+        "id": "test-web-ui-automation-using-cypress-framework;validate-customer-able-to-access-the-page-navigate-to-booking-of",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Validate Customer able to access the page navigate to booking of",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User launches \"http://psinnersource.pscloudhub.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 4547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

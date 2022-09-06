@@ -1,0 +1,11 @@
+{
+  "testFiles": "**/*.feature",
+  "video": true,
+  "integrationFolder": "cypress/integration",
+  "fixturesFolder": "cypress/fixtures",
+  "pluginFile": "cypress/plugins/index.js",
+  "supportFile": "cypress/support/index.js",
+  "screenshotFolder": "cypress/screenshots",
+  "videoFolder": "cypress/videos",
+  "projectId": "56w5ue"
+}
